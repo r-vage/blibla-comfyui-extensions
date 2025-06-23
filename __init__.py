@@ -1,4 +1,6 @@
 import os
+import nodes
+"""
 import shutil
 
 comfy_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -19,5 +21,8 @@ def setup_js():
         print(f"An error occurred: {e}")
 
 setup_js()
-
+"""
+nodes.EXTENSION_WEB_DIRS["blibla-comfyui-extensions"] = os.path.join(
+    os.path.dirname(os.path.realpath(__file__)), "extensions"
+)
 NODE_CLASS_MAPPINGS = {}
